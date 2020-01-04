@@ -1,6 +1,8 @@
 spring:
   application:
     name: config-server
+    
+    
   
   cloud:
     config:
@@ -10,6 +12,13 @@ spring:
           searchPaths: config
           #username: your-username
           #password: your-password
+          
+          
+  rabbitmq:
+    host: 192.168.64.140
+    port: 5672
+    username: admin
+    password: admin
     
 server:
   port: 6001
